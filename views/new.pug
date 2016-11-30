@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  form.form-horizontal(method='post')
+    fieldset
+      legend URL Shortener
+
+      .form-group
+        label.col-md-4.control-label(for='textinput') 
+        .col-md-4
+          input#myURL.form-control.input-md(name='myURL', type='text', value='http://', required='')
+          span.help-block Enter the URL to shorten
+          input(type='submit', value='Submit')
